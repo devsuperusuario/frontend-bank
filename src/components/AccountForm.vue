@@ -68,8 +68,8 @@
           }
   
           const data = await response.json();
-          this.account = data;
-        //   print("data retornado por la api", data )
+          this.account = data.balance;
+          console.log("data retornado por la api", data )
         } catch (error) {
           this.errorMessage = error.message;
         }
