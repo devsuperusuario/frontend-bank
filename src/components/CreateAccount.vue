@@ -67,7 +67,6 @@ export default {
         } else {
           message.value = `Error: ${result.detail}`;
           toast.error(`Error: ${result.detail}`, { duration: 5000 });
-          console.log("error", result.detail);
         }
       } catch (error) {
         message.value = "Error al conectar con el servidor";

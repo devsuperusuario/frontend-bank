@@ -70,8 +70,9 @@ export default {
       socket = new WebSocket(`${process.env.VUE_APP_API_URL}/ws/notifications`);
 
       socket.onmessage = (event) => {
-        console.log("evento recibido", event.data);
 
+        console.log("evento recibido en los sockets", event);
+        
         const depositNotification = JSON.parse(event.data);
         if (depositNotification.account_id === depositData.value.account_id) {
           message.value = `Has recibido un nuevo depósito de ${depositNotification.amount} ${depositNotification.currency}`;

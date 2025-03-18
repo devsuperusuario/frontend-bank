@@ -23,6 +23,7 @@ export default {
           `http://localhost:8000/accounts/${accountId}`,
         );
         this.account = await response.json();
+        print("la cosa en el home", this.account)
       } catch (error) {
         console.error("Error al obtener la cuenta:", error);
       }

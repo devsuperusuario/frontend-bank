@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <div class="logo-container">
-      <img src="./assets/Chelita Bank.png" alt="chelita-bank" />
+      <img src="./assets/chelita-bank.png" alt="chelita-bank" />
     </div>
 
     <nav class="nav-container">

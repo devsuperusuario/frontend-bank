@@ -51,7 +51,6 @@ export default {
       this.loading = true;
       this.error = null;
       try {
-        console.log("se entró al componente del historial");
 
         const response = await fetch(
           `${process.env.VUE_APP_API_URL}/get-historical/${this.accountId}`,
